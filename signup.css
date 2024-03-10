@@ -1,0 +1,98 @@
+body {
+            background-image: url("cv2.jpg") ;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        nav .logo{
+            width: 60px;
+        }
+        
+        nav{
+            /*background-color: black;*/
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 17px;
+        }
+        .a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-size: 24px;
+            border: 2px solid #fff;
+            padding: 14px 70px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins' ,sans-serif;
+        }
+
+
+        .login-container {
+            margin-top: 80px;
+            background-color: transparent;
+            padding: 120px;
+            border-radius: 20px;
+            border-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sign-container {
+            margin-top: 200px;
+            background-color: transparent;
+            padding: 120px;
+            border-radius: 20px;
+            border-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        .login-form {
+            /*margin-top: 130px;*/
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 60px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }

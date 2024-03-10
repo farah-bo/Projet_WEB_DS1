@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+}
+
+.header p {
+    color: #666;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+#education-details,
+#work-details,
+#skills-details,
+#certifications-details,
+#languages-details,
+#linkedin-details {
+    margin-top: 0;
+}

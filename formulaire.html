@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>Sign Up Form</title>
+        <link rel="icon" type="image/jpg" href="logo2.jpg">
+
+        <style>
+            body {
+                background-image: url("cv4.jpg") ;
+                background-size: cover;
+                background-attachment: fixed;            
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 150vh;
+            }
+    
+            h2 {
+                text-align: center;
+                color: white;
+                font-size: 60px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .input-group{
+            position: relative;
+            margin:30px 0;
+            border-bottom: 2px solid #fff;
+            }
+            .input-group label{
+                position: absolute;
+                top:50%;
+                left:5px;
+                transform: translateY(-50%);
+                font-size: 16px;
+                color:#fff;
+                pointer-events: none;
+                transform: .5s;
+            }
+    
+            .input-group input{
+                width: 320px; 
+                height:40px;
+                font-size: 16px;
+                color: #fff;
+                padding: 0 5px;
+                background: transparent;
+                border:none;
+                outline: none;
+            }
+            .input-group input:focus~label,
+            .input-group input:valid~label{
+                top:-5px
+            }
+            .remember{
+                margin:-5px 0 15px 5px;
+            }
+            .remember label {
+                 color: #fff;
+                 font-size: 14px;
+            }
+            .remember label input {
+                accent-color: #0ef;
+            }
+    
+            button{
+                position: relative;
+                width: 100%;
+                height: 40px;
+                background: #0ef;
+                box-shadow: 0 0 10px #0ef;
+                font-size: 16px;
+                color: #000;
+                font-weight: 500;
+                cursor: pointer;
+                border-radius: 30px;
+                border: none;
+                outline: none;
+            }
+            .ins{
+                margin-top: 800px;
+                position: relative;
+                width: 500px;
+                height: 2800px;
+                background: transparent;
+                box-shadow: 0 0 50px #0ef;
+                border-radius: 20px;
+                padding: 40px;
+               overflow: hidden;
+            }
+            .form-ins{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                height: 110%;
+                transition: 1s ease-in-out ;
+            }
+            .sign-up{
+            font-size: 20px;
+            text-align: center;
+            margin: 15px 0;
+            }
+            .sign-up p{
+                color: #fff;
+            }
+            .sign-up p a {
+                color: #0ef;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .sign-up p a:hover {
+                text-decoration: underline;
+            } 
+            h2 {
+           font-size: 3em;
+          color: #f3f3f3f8;
+           }
+      
+             .labelCSS{
+                 display: inline-block;
+              background-color: indigo;
+                color: white;
+                padding: 0.5rem;
+                 font-family: sans-serif;
+                 border-radius: 0.3rem;
+                    cursor: pointer;
+                margin-top: 1rem;
+                }
+             
+     
+            
+        </style>
+
+    
+</head>
+<body>
+    
+    <div class="menu">
+    <nav>
+        <img src="logo2.jpg" class="logo">
+        <ul>
+            <li><a href="index2.html">Disconnect</a></li>
+        </ul>
+    </nav>
+    <div class="ins">
+    <div class="form-ins sign-up">
+        <form method="POST" action="cv.php" enctype="multipart/form-data">
+            <h2>Personnal information</h2>
+            <div class="input-group">
+                <input type="text" name="nom">
+                <label for="nom">First name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="lnom">
+                <label for="lnom">Last name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" name="mail">
+                <label for="mail">Email Adress</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="headline">
+                <label for="headline">Headline</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="phone">
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="adr">
+                <label for="adr">Adress</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="cp">
+                <label for="cp">Poste Code</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="city">
+                <label for="city">City</label>
+            </div>
+            <div class="input-group">
+
+                <BR>
+                <input type="text" name="degree" placeholder="Title Diploma 1">
+                <input type="text" name="ecole1" placeholder="Diploma School 1">
+                <input type="text" name="lieuDiplome1" placeholder="Diploma location 1">
+                <input  for="work" type="date" name="datedegree">
+                <BR>
+                <BR>
+
+                <input type="text" name="degree2" placeholder="Title Diploma 2">
+                <input type="text" name="ecole2" placeholder="Diploma School 2">
+                <input type="text" name="lieuDiplome2" placeholder="Diploma location 2">
+                <input  for="degree" type="date" name="datedegree2">
+                <label for="degree">Diplômes </label>
+
+            </div>
+
+            <div class="input-group">
+                <BR>
+                <input type="text" name="work" placeholder="Title Experience 1">
+                <input type="text" name="entreprise1" placeholder="Company Experience 1">
+                <input type="text" name="lieu1" placeholder="Location Experience 1">
+                <input type="text" name="description1" placeholder="Description Experience 1">
+                <input  for="work" type="date" name="datework">
+                <BR>
+                <BR>
+
+                <input type="text" name="work2" placeholder="Title Experience 2">
+                <input type="text" name="entreprise2" placeholder="Company Experience 2">
+                <input type="text" name="lieu2" placeholder="Location Experience12">
+                <input type="text" name="description2" placeholder="Description Experience 2">
+                <input  for="work" type="date" name="datework2">
+                <label for="work">Work Experience</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="Skills">
+                <label for="Skills">Very strong skills</label>
+
+            </div>
+            <div class="input-group">
+                <input type="text" name="descriptionDiplome1">
+                <label for="Skills">strong skills</label>
+
+            </div>
+            <div class="input-group">
+                <input type="text" name="descriptionDiplome2">
+                <label for="Skills">Average skills</label>
+
+            </div>
+            <div class="input-group">
+                <input type="text" name="Certif">
+                <label for="Certif">Certifications and Licenses</label>
+
+            </div>
+            <div class="input-group">
+                <input type="text" name="Languages" PLACEHOLDER="Language 1">
+                <input type="text" name="Languages2" PLACEHOLDER="Language 2">
+                <input type="text" name="Languages3" PLACEHOLDER="Language 3">
+
+
+                <label for="Languages">Languages</label>
+
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="LinkedIn">
+                <label for="LinkedIn">LinkedIn Profile</label>
+
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="facebook">
+                <label for="facebook">Facebook Profile</label>
+
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="git">
+                <label for="git">Github Profile</label>
+
+            </div>
+            <div class="input-group">
+                <input type="file" name="imagePath" accept="image/*"  id="imagePath" > 
+                <label for="imagePath" class="labelCSS">Upload image for your CV</label> <br>
+            </div>
+              <br>
+            <button type="submit">Go</button>
+        </form>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>
+
